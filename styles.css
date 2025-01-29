@@ -10,8 +10,6 @@ main {
 	display: flex;
 	flex-direction: row;
 	padding-left: 202px;
-	width: 90%;
-	height: 90% ;
 }
 
 h1 {
@@ -60,11 +58,21 @@ footer {
 	padding-left: 202px;
 }
 
-
-@media screen and (max-width = 375px) {
-	main{
+@media screen and (max-width: 375px) {
+	main {
 		display: flex;
 		flex-direction: column;
+		padding-left: 0;
+		align-items: center;
 	}
-	
+	h1 {
+		font-size: 36px;
+	}
+	.result {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		padding-top: 40px;
+		gap: 62px;
+	}
 }

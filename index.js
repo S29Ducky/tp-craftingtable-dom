@@ -43,6 +43,30 @@ const recipeList = [pickaxeRecipe, axeRecipe];
 const recipeImageSrcList = [pickaxeRecipeImageSrc, axeRecipeImageSrc];
 
 const craftingTable = ["", "", "", "", "", "", "", "", ""];
-const inventoryTable = [1, 2];
+const inventoryTable = [1, 2, 2];
 
 // Coder ici
+
+const inventaire = document.querySelector(".inventaire");
+
+
+function createItemButton(imageSrc, imageAlt) {
+	const button = document.createElement("button");
+	const image = document.createElement("img");
+	
+	image.setAttribute("src", imageSrc);
+	image.setAttribute("alt", imageAlt);
+	
+	button.appendChild(image);
+
+	return button;
+}
+
+for(let i = [1]; i < inventoryTable.length; i++) {
+
+	const button = createItemButton(imageSrc, imageAlt);
+	
+	button = button + 1
+
+	inventaire.appendChild(button)
+}
